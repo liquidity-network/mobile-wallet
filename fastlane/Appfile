@@ -1,0 +1,2 @@
+json_key_file "../playstore_API_key.json"
+apple_id("lqd@liquidity.network") # Your Apple email address

@@ -1,0 +1,77 @@
+fastlane_version '2.53.1'
+
+before_all do
+  ensure_git_status_clean
+  git_pull
+  sh("yarn")
+end
+
+platform :ios do
+  desc "Push a new build to TestFlight"
+  lane :tf do
+    ensure_git_branch(branch: 'master')
+
+    sh("yarn pod:install")
+
+    match(type: "appstore", readonly: true)
+
+    increment_build_number(xcodeproj: "ios/wallet.xcodeproj")
+
+    build_app(scheme: "wallet",
+              workspace: "ios/wallet.xcworkspace")
+
+    upload_to_testflight(
+      skip_waiting_for_build_processing: true
+    )
+
+    commit_version_bump(
+      message: "[Version: #{lane_context[SharedValues::BUILD_NUMBER]}] iOS deploy [ci skip]",
+      xcodeproj: "./ios/wallet.xcodeproj",
+      force: true
+    )
+    push_to_git_remote
+  end
+end
+
+platform :android do
+  # Android Lanes
+  def build(config)
+    gradle(task: 'clean', project_dir: 'android/')
+    gradle(task: 'incrementVersionCode', project_dir: 'android/')
+    gradle(task: 'bundle', build_type: config, project_dir: 'android/')
+  end
+
+  desc 'Ship to Playstore Internal'
+  lane :beta do
+    ENV["REACT_NATIVE_ENV"] = "staging"
+
+    build('releaseBeta')
+
+    supply(track: 'internal', package_name: 'com.liquiditynetwork.wallet.debug', timeout: 9999999)
+
+    git_commit(path: ['./android/gradle.properties'], message: '[Android] deploy')
+
+    push_to_git_remote
+  end
+
+  desc 'Ship to Playstore Production'
+  lane :production do
+    ensure_git_branch(branch: 'master')
+
+    sh("yarn unit")
+    # Remove e2e tests while the test env is not fix
+    # sh("yarn e2e:ios")
+
+    build('release')
+
+    supply(track: 'beta', package_name: 'com.liquiditynetwork.wallet')
+
+    git_commit(path: ['./android/gradle.properties'], message: '[Android] deploy')
+
+    push_to_git_remote
+
+    sh "/bin/bash ../scripts/convertAabToApk"
+    sh "cp ../android/app/build/outputs/bundle/release/universal.apk ../firebase/hosting/wallet.apk"
+    sh "cd ../firebase && firebase deploy --only hosting"
+  end
+end

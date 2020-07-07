@@ -1,0 +1,5 @@
+--recursive
+--require ts-node/register
+--timeout 300000
+--bail
+--file __e2e__/init.ts

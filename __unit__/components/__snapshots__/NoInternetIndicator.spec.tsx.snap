@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NoInternetIndicator> component renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#0f022b",
+      "borderColor": "#d11b1b",
+      "borderRadius": 20,
+      "borderWidth": 1,
+      "height": 40,
+      "justifyContent": "center",
+      "position": "absolute",
+      "right": 10,
+      "top": 28,
+      "width": 40,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "#d11b1b",
+          "fontSize": 22,
+        },
+        undefined,
+        Object {
+          "fontFamily": "Feather",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+        Object {},
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;

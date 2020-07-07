@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Avatar> component renders w/name correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#5436cd",
+      "borderRadius": 24,
+      "height": 48,
+      "justifyContent": "center",
+      "width": 48,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#fff",
+        "fontFamily": "AktivGroteskCorp-Regular",
+        "fontSize": 18,
+      }
+    }
+  >
+    MJ
+  </Text>
+</View>
+`;
+
+exports[`<Avatar> component renders w/url correctly 1`] = `
+<Image
+  source={
+    Object {
+      "uri": "https://google.com",
+    }
+  }
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#5436cd",
+      "borderRadius": 24,
+      "height": 48,
+      "justifyContent": "center",
+      "width": 48,
+    }
+  }
+/>
+`;
