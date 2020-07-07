@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BackButton> component renders correctly 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  hitSlop={
+    Object {
+      "bottom": 15,
+      "left": 15,
+      "right": 15,
+      "top": 15,
+    }
+  }
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": undefined,
+          "fontSize": 12,
+        },
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "color": "#fff",
+            "fontSize": 27,
+          },
+          undefined,
+        ],
+        Object {
+          "fontFamily": "Feather",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+        Object {},
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;

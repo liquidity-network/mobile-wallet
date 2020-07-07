@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CheckBox> component renders disabled correctly 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  hitSlop={
+    Object {
+      "bottom": 7,
+      "left": 7,
+      "right": 7,
+      "top": 7,
+    }
+  }
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "#fff",
+          "fontSize": 26,
+        },
+        undefined,
+        Object {
+          "fontFamily": "Material Design Icons",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+        Object {},
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;
+
+exports[`<CheckBox> component renders enabled correctly 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  hitSlop={
+    Object {
+      "bottom": 7,
+      "left": 7,
+      "right": 7,
+      "top": 7,
+    }
+  }
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "#fff",
+          "fontSize": 26,
+        },
+        undefined,
+        Object {
+          "fontFamily": "Material Design Icons",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+        Object {},
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;

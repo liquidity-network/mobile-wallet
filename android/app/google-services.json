@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "740004913746",
+    "firebase_url": "https://liquidity-wallet.firebaseio.com",
+    "project_id": "liquidity-wallet",
+    "storage_bucket": "liquidity-wallet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740004913746:android:52c9df8d5de4779f",
+        "android_client_info": {
+          "package_name": "com.liquiditynetwork.wallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "740004913746-62llaqqrt8p0rlgciorebujg27h4l7hq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "REPLACE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740004913746:android:ae4d19ba1ac8bfd0",
+        "android_client_info": {
+          "package_name": "com.liquiditynetwork.wallet.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "740004913746-62llaqqrt8p0rlgciorebujg27h4l7hq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJuE3crhCioBUdhwYohiafpx06Ak8q5tk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

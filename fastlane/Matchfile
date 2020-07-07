@@ -1,0 +1,6 @@
+git_url("git@github.com:liquidity-network/mobileapp-certificate.git")
+
+type("development") # The default type, can be: appstore, adhoc, enterprise or development
+
+app_identifier(["com.liquiditynetwork.wallet-ios"])
+username("lqd@liquidity.network") # Your Apple Developer Portal username

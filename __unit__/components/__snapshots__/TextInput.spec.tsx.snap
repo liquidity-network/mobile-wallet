@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextInput> component renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#fff",
+        "borderColor": "#d7dae0",
+        "borderRadius": 5,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "height": 52,
+        "width": "100%",
+      },
+      undefined,
+      false,
+    ]
+  }
+>
+  <TextInput
+    allowFontScaling={true}
+    editable={true}
+    onBlur={[Function]}
+    onFocus={[Function]}
+    placeholderTextColor="#d7dae0"
+    rejectResponderTermination={true}
+    style={
+      Array [
+        Object {
+          "color": "#0a0021",
+          "flex": 1,
+          "fontFamily": "AktivGroteskCorp-Regular",
+          "fontSize": 18,
+          "height": "100%",
+          "paddingHorizontal": 16,
+        },
+        undefined,
+        undefined,
+      ]
+    }
+    underlineColorAndroid="transparent"
+  />
+  <View
+    accessible={true}
+    focusable={true}
+    hitSlop={
+      Object {
+        "bottom": 15,
+        "left": 15,
+        "right": 15,
+        "top": 15,
+      }
+    }
+    isTVSelectable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": undefined,
+            "fontSize": 12,
+          },
+          Object {
+            "color": "#d7dae0",
+            "fontSize": 22,
+            "paddingRight": 16,
+          },
+          Object {
+            "fontFamily": "Ionicons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <Text>
+    :)
+  </Text>
+  <View />
+</View>
+`;
