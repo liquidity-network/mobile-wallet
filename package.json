@@ -40,7 +40,7 @@
     "immer": "5.0.0",
     "jetifier": "1.6.5",
     "liquidity-invoice-generation": "3.0.0",
-    "lodash": "4.17.15",
+    "lodash": "4.17.19",
     "nocust-client": "4.0.0-alpha.7",
     "process": "0.11.10",
     "querystringify": "2.1.1",
