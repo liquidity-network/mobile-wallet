@@ -37,7 +37,7 @@
     "events": "3.0.0",
     "https-browserify": "1.0.0",
     "i18n-js": "3.5.0",
-    "immer": "5.0.0",
+    "immer": "8.0.1",
     "jetifier": "1.6.5",
     "liquidity-invoice-generation": "3.0.0",
     "lodash": "4.17.15",
